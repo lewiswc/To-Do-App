@@ -1,0 +1,97 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 183, 255),
+    rgb(214, 255, 147)
+  );
+  font-family: "Shadows Into Light", cursive;
+}
+
+.completed {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.container {
+  width: 340px;
+  margin: 100px auto;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  background-color: #2980b9;
+  color: white;
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px 10px;
+}
+
+.fa-plus {
+  float: right;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #f7f7f7;
+  font-size: 15px;
+  padding-left: 10px;
+  color: #667;
+  border: 3px solid rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+
+input:focus {
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  background-color: white;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #667;
+  font-weight: 600;
+}
+
+li:nth-child(2n) {
+  background-color: #f7f7f7;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1;
+}
+
+span {
+  background-color: #e74c3c;
+  color: white;
+  height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 10px;
+  width: 0px;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+/* Media screens */
+@media screen and (max-width: 338px) {
+  .container {
+    width: 300px;
+  }
+}
